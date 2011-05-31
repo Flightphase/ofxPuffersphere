@@ -1,0 +1,9 @@
+ofxPuffersphere
+
+Rough framework for working with Pufferfish's Puffersphere projectors.
+
+This library is geared towards making it easy to display arbitrary assests on the spherical display with correction distortion, allowing for rotations with quaternion geometries.
+
+Examples coming soon!
+
+by flightphase for the national maritime museum
