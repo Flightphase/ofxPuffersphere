@@ -37,7 +37,7 @@ vec3 qtransform( vec4 q, vec3 v ){
 void main()
 {
     vec2 samplerPosSphereSpace = gl_TexCoord[0].xy;
-    vec2 samplerPosNormalised = samplerPosSphereSpace / vec2(canvasDimensions.y, canvasDimensions.y) ;
+    vec2 samplerPosNormalised = samplerPosSphereSpace / vec2(canvasDimensions.y, canvasDimensions.y);
 	
     vec3 pointOnSphere = pointInSpace(samplerPosNormalised);
     pointOnSphere = qtransform(quat, pointOnSphere);
@@ -45,8 +45,8 @@ void main()
 	
     vec2 offset = (textureDimensions * textureScale - canvasDimensions) / 2.0;
 
-    vec2 samplerPos = mod(newuv * canvasDimensions/textureScale, canvasDimensions/textureScale) + offset;
-
+    vec2 samplerPos = (mod(newuv, 1.0) * canvasDimensions + offset) / textureScale;
+	
     if(samplerPos.x < 0. || samplerPos.y < 0. || samplerPos.x > textureDimensions.x || samplerPos.y > textureDimensions.y){
 		gl_FragColor = vec4(0.0);
 	}
