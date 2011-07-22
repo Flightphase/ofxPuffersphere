@@ -13,7 +13,6 @@ void testApp::setup(){
 	puffersphere->spherizeLocation = "shaders/spherize";
 	puffersphere->setup(1050);
 
-
 	puffersphere->addGuiParams();
 	
 	//create assets like this if you're using normal images
@@ -58,7 +57,7 @@ void testApp::draw(){
 	ofBackground(255);
 	
 	if(drawSphere){
-		puffersphere->drawSphere(ofVec3f( ofGetWidth()/2.0, ofGetHeight()/2.0, 10), 250 );
+		puffersphere->drawSphere(ofVec3f( ofGetWidth()/2.0, ofGetHeight()/2.0, 10) );
 	}
 	else{
 		puffersphere->draw();
