@@ -1,7 +1,7 @@
 <controls>
     <Toggle_Render_For_Puffersphere>
         <name>Render For Puffersphere</name>
-        <value>1</value>
+        <value>0</value>
     </Toggle_Render_For_Puffersphere>
     <SliderFloat_fov>
         <name>fov</name>
@@ -13,14 +13,14 @@
     </SliderFloat_Z>
     <SliderFloat_Lens_Correction_A>
         <name>Lens Correction A</name>
-        <value>1.342500</value>
+        <value>1.328500</value>
     </SliderFloat_Lens_Correction_A>
     <SliderFloat_Lens_Correction_B>
         <name>Lens Correction B</name>
-        <value>0.024600</value>
+        <value>0.031800</value>
     </SliderFloat_Lens_Correction_B>
     <SliderFloat_Lens_Correction_C>
         <name>Lens Correction C</name>
-        <value>0.150000</value>
+        <value>0.157250</value>
     </SliderFloat_Lens_Correction_C>
 </controls>

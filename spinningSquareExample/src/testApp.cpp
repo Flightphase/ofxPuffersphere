@@ -39,10 +39,11 @@ void testApp::update(){
 	bgquad.makeRotate(-ofGetFrameNum()/10.0, 0, 0, 1);
 	fullscaleBG->rotation = bgquad;
 	
-	ofQuaternion q1, q2;
+	ofQuaternion q1, q2, q3;
 	q1.makeRotate(30*sin(ofGetFrameNum()/20.0), 0, 1, 0); //rotate this between 30 and -30
 	q2.makeRotate(ofGetFrameNum(), 0, 0, 1); //spin it around the center
-	videoQuad->rotation = q1*q2;
+	q3.makeRotate(ofGetFrameNum()*3, 1, 0, 0);
+	videoQuad->rotation = q3*q2*q1;
 	
 	
 	//you can also do things like this to change the color
